@@ -28,8 +28,7 @@ with col1:
 
 st.text('')
 if st.button("Predict Total Adver Spends"):
-    result = clf.predict(
-        np.array([[tv,rd,np]]))
+    result = clf.predict(np.array([[tv,rd,np]]))
     st.text(result[0])
 
 st.markdown("Develope By Avinash Pawar at NIELIT Daman")
