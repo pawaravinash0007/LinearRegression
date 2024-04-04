@@ -27,8 +27,8 @@ with col1:
 
 
 st.text('')
-if st.button("Predict Total Adver Spends"):
+if st.button("Seles Prediction "):
     result = clf.predict(np.array([[tv,rd,newspaper]]))
     st.text(result[0])
 
-st.markdown("Develope By Avinash Pawar at NIELIT Daman")
+st.markdown("Developed By Avinash Pawar at NIELIT Daman")
