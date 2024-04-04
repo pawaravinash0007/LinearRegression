@@ -23,12 +23,12 @@ with col1:
 	st.text("Radio")
 	rd = st.slider("Adver. Spends on Radio", 1.0, 10000.0, 0.5)
 	st.text("NewsPaper")
-	np = st.slider("Adver. Spends on NewsPaper", 1.0,10000.0,0.5)
+	newspaper = st.slider("Adver. Spends on NewsPaper", 1.0,10000.0,0.5)
 
 
 st.text('')
 if st.button("Predict Total Adver Spends"):
-    result = clf.predict(np.array([[tv,rd,np]]))
+    result = clf.predict(np.array([[tv,rd,newspaper]]))
     st.text(result[0])
 
 st.markdown("Develope By Avinash Pawar at NIELIT Daman")
