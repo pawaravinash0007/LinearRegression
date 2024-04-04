@@ -19,11 +19,11 @@ col1,col2 = st.columns(2)
 
 with col1:
 	st.text("TV")
-	tv = st.slider("Adver. Spends on TV", 1.0, 10000.0, 0.5)
+	tv = st.slider("Adver. Spends on TV", 1, 10000, 0.5)
 	st.text("Radio")
-	rd = st.slider("Adver. Spends on Radio", 1.0, 10000.0, 0.5)
+	rd = st.slider("Adver. Spends on Radio", 1, 10000, 0.5)
 	st.text("NewsPaper")
-	np = st.slider("Adver. Spends on NewsPaper", 1.0,10000.0,0.5)
+	np = st.slider("Adver. Spends on NewsPaper", 1,10000,0.5)
 
 
 st.text('')
